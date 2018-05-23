@@ -1,4 +1,4 @@
-package TTTGA;
+package pack;
 
 import java.util.*;
 /**

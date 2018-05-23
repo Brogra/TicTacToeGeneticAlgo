@@ -1,5 +1,4 @@
-package TTTGA;
-import java.util.Arrays.*;
+package pack;
 import java.util.*;
 /**
  * Write a description of class GAMAIN here.
@@ -198,14 +197,14 @@ public class GAMAIN {
                        ind[a][1] = ind2[a][1];
                    }
                }
-               
+
            }
            popA.add(ind);
         }
         return popA;
     }
-    
-    
+
+
     public static void printArray(String matrix[][]) {
         for (String[] row : matrix) {
             System.out.println(Arrays.toString(row));   
@@ -241,7 +240,8 @@ public class GAMAIN {
        
         
     }
-    public void main() {
+
+    public void run() {
         System.out.println("Starting...");
         for(int e = 0; e < pop; e++) {
             //ArrayList<Integer> newInd = new ArrayList<Integer>();
@@ -336,5 +336,9 @@ public class GAMAIN {
             play.mainClass(popArray.get(0));
         }
         on = false;
+    }
+    public static void main(String[] args){
+        GAMAIN run = new GAMAIN();
+        run.run();
     }
 }
